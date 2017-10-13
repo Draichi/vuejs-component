@@ -43,19 +43,20 @@
 <style scoped>
     .botao {
         display: inline-block;
-        padding: 10px;
-        border-radius: 3px;
-        margin: 10px;
-        font-size: 1.2em;
+        padding: .5vw;
+        border-radius: 1.8vh;
+        border-style: none;
+        margin: .3vw;
+        font-size: 1vw;
     }
 
     .botao-perigo {
-        background: firebrick;
+        background: #E74C3C;
         color: white;
     }
 
     .botao-padrao {
-        background: darkcyan;
+        background: #3EB95F;
         color: white;
     }
 </style>

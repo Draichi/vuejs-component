@@ -10,6 +10,6 @@
 
 <style scoped>
     .imagem-responsiva {
-    width: 100%;
-  }
+        width: 100%;
+    }
 </style>

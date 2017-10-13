@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1 class="centralizado">{{ titulo }}</h1>
-    <p v-show="mensagem" class="centralizado">{{ mensagem }}</p>
+    <h2 class="header">{{ titulo }}</h2>
+    <h4 v-show="mensagem" class="filter-text">{{ mensagem }}</h4>
 
-    <input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="Filtre as imagens">
-    {{ filtro }}
+    <input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="Filter">
+    <h4 class="filter-text">{{ filtro }}</h4>
     <ul class="lista-fotos">
       <li class="lista-fotos-item" v-for="foto of fotosComFiltro">
 
@@ -12,10 +12,10 @@
           <imagem-responsiva v-meu-transform:rotate.animate="60" :url="foto.url" :titulo="foto.titulo"/>
 
           <router-link :to="{name:'altera', params:{id:foto._id}}">
-            <meu-botao tipo="button" rotulo="ALTERAR"></meu-botao>
+            <meu-botao tipo="button" rotulo="EDIT"></meu-botao>
           </router-link>
 
-          <meu-botao tipo="button" rotulo="REMOVER" :confirmacao="true" estilo="perigo" @botaoAtivado="remove(foto)"/>
+          <meu-botao tipo="button" rotulo="DELETE" :confirmacao="true" estilo="perigo" @botaoAtivado="remove(foto)"/>
         </meu-painel>
 
       </li>
@@ -40,7 +40,7 @@ export default {
 
   data() {
     return {
-      titulo: 'Projeto visa o uso de diretivas, components, e integração com API.',
+      titulo: 'Add, remove, change ou filter an image',
       fotos: [],
       filtro: '',
       mensagem: ''
@@ -86,12 +86,25 @@ export default {
 </script>
 
 <style>
- .centralizado {
+  .filter-text {
     text-align: center;
+    font-size: 2vh;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 5vh;
+    text-transform: uppercase;
+  }
+
+  .filter-text {
+    text-align: center;
+    margin: 2vw;
   }
 
   .lista-fotos {
     list-style: none;
+    text-align: center;
   }
 
   .lista-fotos .lista-fotos-item {
@@ -99,8 +112,12 @@ export default {
   }
   
   .filtro {
+    margin: 3vh auto;
     display: block;
-    width: 100%;
+    width: 40vw;
+    height: 8vh;
+    border-radius: 3vh;
+    text-align: center;
   }
 
 </style>

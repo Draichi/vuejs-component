@@ -25,24 +25,24 @@ export default {
 
 <style>
     .painel {
-    padding: 0 auto;
-    border: solid 2px grey;
     display: inline-block;
-    margin: 5px;
-    box-shadow: 5px 5px 10px grey;
-    width: 200px;
-    height: 100%;
+    margin: 2vw;
+    box-shadow: 0 2px 10px 1px #333;
+    max-width: 15vw;
     vertical-align: top;
     text-align: center;
     }
 
     .painel .painel-titulo {
     text-align: center;
-    border: solid 2px;
-    background: lightblue;
-    margin: 0 0 15px 0;
-    padding: 10px;
+    background: #3498DB;
     text-transform: uppercase;
+    }
+
+    .painel-titulo{
+        font-size: 2vh;
+        color: white;
+        padding: 1vw;
     }
 
     .painel-fade-enter, .painel-fade-leave-active {
@@ -55,6 +55,7 @@ export default {
 
     .painel-conteudo{
         overflow: hidden;
+        background-color: #3498DB;
     }
 
 </style>

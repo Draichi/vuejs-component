@@ -10,7 +10,7 @@ import VeeValidate, {Validator} from 'vee-validate';
 import msg from './pt_BR';
 
 Vue.use(VueResource);
-Vue.http.options.root = 'http://www.mocky.io/v2/';
+Vue.http.options.root = 'http://localhost:3000';
 
 Vue.use(VueRouter);
 

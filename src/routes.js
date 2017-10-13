@@ -12,7 +12,7 @@ export const routes = [{
         path: '/cadastro',
         name: 'cadastro',
         component: Cadastro,
-        titulo: 'Cadastrar',
+        titulo: 'Add',
         menu: true
     },
     {

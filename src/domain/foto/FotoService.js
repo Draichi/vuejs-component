@@ -1,7 +1,7 @@
 export default class FotoService {
 
     constructor(resource) {
-        this._resource = resource('5949edfd120000021c272927{/id}');
+        this._resource = resource('v1/fotos{/id}');
     }
 
 

@@ -31,10 +31,16 @@
 
 <style>
 
+
+  * {
+    color: #2C3E50;
+    margin: 0;
+    padding: 0;
+  }
+
   .corpo {
     font-family: Helvetica, sans-serif;
-    margin: 0 auto;
-    width: 96%;
+    background-color: #ECF0F1;
   }
 
   .pagina-fade-enter, .pagina-fade-leave-active {
