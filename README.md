@@ -1,6 +1,6 @@
 # alurapic
 
-> A Vue.js project
+> This is a component in Vue.js that allows adding images to an API, filtering, removing, and changing those images. All good pratices were used, including spreading the application into smaller components.
 
 ## Build Setup
 
