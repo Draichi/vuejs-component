@@ -16,9 +16,10 @@ npm run build
 ```
 
 ### API Setup
+
+> Go to `alurapic/api` and run:
 ```bash
-# in alurapic/api run
 npm start
-# will be listen in localhost:3000/v1/fotos
+# The images will be in localhost:3000/v1/fotos
 ```
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
