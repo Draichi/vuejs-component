@@ -4,7 +4,7 @@
 
 > This is a component in Vue.js that allows adding images to an API, filtering, removing, and changing those images. All good pratices were used, including spreading the application into smaller components.
 
-You you need to use this [API](https://github.com/Draichi/api).
+You will need to use this [API](https://github.com/Draichi/api).
 
 ## Build Setup
 
